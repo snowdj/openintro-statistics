@@ -90,6 +90,7 @@
 \newcounter{eocesolch}
 \setcounter{eocesolch}{0}
 \newcounter{eocesol}[eocesolch]
+\renewcommand{\theeocesol}{\arabic{eocesolch}.\arabic{eocesol}}
 % 4.2 Parameters
 \newlength{\exampleAboveBar}
 \newlength{\exampleBelowBar}
@@ -157,7 +158,11 @@
 Videos covering #1 using TI and Casio graphing calculators are available at \mbox{\oiRedirect{textbook-openintro_videos}{openintro.org/videos}}.}
 \end{tipBox}}
 \newcommand{\videohref}[2][4.5mm]{\oiRedirect{#2}{\raisebox{-0.3mm}[0pt]{\includegraphics[height=#1]{extraTeX/icons/video_camera}}}}
+\newcommand{\slideshref}[2][4.5mm]{\oiRedirect{#2}{\raisebox{-0.3mm}[0pt]{\includegraphics[height=#1]{extraTeX/icons/slides}}}}
+\newcommand{\videomarginhref}[2][4mm]{\oiRedirect{#2}{\raisebox{-3mm}[0pt]{\includegraphics[height=#1]{extraTeX/icons/video_camera}}}}
 \newcommand{\sectionvideohref}[2][6mm]{\oiRedirect{#2}{\raisebox{-0.5mm}[0pt]{\includegraphics[height=#1]{extraTeX/icons/video_camera}}}}
+\newcommand{\sectionslideshref}[2][6mm]{\oiRedirect{#2}{\raisebox{-0.5mm}[0pt]{\includegraphics[height=#1]{extraTeX/icons/slides}}}}
+\newcommand{\MarginVideo}[1]{\marginpar[{\videomarginhref{#1}}]{{\videomarginhref{#1}}}}
 
 
 
@@ -214,8 +219,8 @@ Videos covering #1 using TI and Casio graphing calculators are available at \mbo
 }
 % 9.3 EOCEs: End of Chapter Exercises
 % 9.3.1 Environment
-\newenvironment{eoce}[2]
-{\refstepcounter{eoce}\noindent\small\textbf{\textcolor{oiB}{\arabic{chapter}.\arabic{eoce}}}\hspace{2mm} #1
+\newenvironment{eoce}[2][]
+{\refstepcounter{eoce}\noindent\small\textbf{\textcolor{oiB}{{\hypersetup{linkcolor=oiB}\ref{eoce_sol_\arabic{chapter}_\arabic{eoce}}}\label{eoce_\arabic{chapter}_\arabic{eoce}}}}\hspace{2mm} #1#2
 
 \addvspace{3mm}
 
@@ -229,7 +234,8 @@ Videos covering #1 using TI and Casio graphing calculators are available at \mbo
 \addvspace{2mm}
 
 }
-\newcommand{\eocesol}[1]{\refstepcounter{eocesol}\noindent\textbf{\color{oiB}\arabic{eocesolch}.\arabic{eocesol}}\hspace{2mm}{\small#1}\addtocounter{eocesol}{1}
+{
+\newcommand{\eocesol}[1]{\refstepcounter{eocesol}\noindent\textbf{\color{oiB}{\hypersetup{linkcolor=oiB}\ref{eoce_\arabic{eocesolch}_\arabic{eocesol}}}\label{eoce_sol_\arabic{eocesolch}_\arabic{eocesol}}}\hspace{2mm}{\small#1}\makebox[0pt]{\color{white}\tiny \refstepcounter{eocesol}\label{eoce_sol_\arabic{eocesolch}_\arabic{eocesol}}}
 
 \addvspace{1mm}
 

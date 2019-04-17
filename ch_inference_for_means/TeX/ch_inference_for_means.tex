@@ -12,7 +12,8 @@ Chapter~\ref{foundationsForInference} introduced a framework for statistical inf
 
 
 %__________________
-\section{One-sample means with the $t$-distribution}
+%\section{One-sample means with the $t$-distribution}
+\section[One-sample means with the $t$-distribution]{One-sample means with the $t$-distribution \sectionvideohref{coursera_video-t_distribution}~\sectionvideohref{coursera_video-inf_for_mean}~\sectionslideshref{gdoc_os3_slides_5-1}}
 \label{oneSampleMeansWithTDistribution}
 
 We required a large sample in Chapter~\ref{foundationsForInference} for two reasons:
@@ -305,7 +306,7 @@ To help us remember to use the $t$-distribution, we use a $T$ to represent the t
 
 
 %__________________
-\section{Paired data}
+\section[Paired data]{Paired data \sectionvideohref{coursera_video-inf_paired_means}~\sectionslideshref{gdoc_os3_slides_5-2}}
 \label{pairedData}
 
 \index{paired data|(}
@@ -417,13 +418,13 @@ We are 95\% confident that Amazon is, on average, between \$9.44 and \$16.08 che
 
 
 %__________________
-\section{Difference of two means}
+\section[Difference of two means]{Difference of two means \sectionvideohref{coursera_video-inf_two_means}~\sectionslideshref{gdoc_os3_slides_5-3}}
 \label{differenceOfTwoMeans}
 
 {
 In this section we consider a difference in two population means, $\mu_1 - \mu_2$, under the condition that the data are not paired. Just as with a single sample, we identify conditions to ensure we can use the $t$-distribution with a point estimate of the difference, $\bar{x}_1 - \bar{x}_2$.
 
-We apply these methods in three contexts: determining whether stem cells can improve heart function, exploring the impact of pregnant womens' smoking habits on birth weights of newborns, and exploring whether there is statistically significant evidence that one variations of an exam is harder than another variation. This section is motivated by questions like ``Is there convincing evidence that newborns from mothers who smoke have a different average birth weight than newborns from mothers who don't smoke?''
+We apply these methods in three contexts: determining whether stem cells can improve heart function, exploring the impact of pregnant womens' smoking habits on birth weights of newborns, and exploring whether there is statistically significant evidence that one variation of an exam is harder than another variation. This section is motivated by questions like ``Is there convincing evidence that newborns from mothers who smoke have a different average birth weight than newborns from mothers who don't smoke?''
 
 \subsection{Confidence interval for a difference of means}
 
@@ -547,7 +548,7 @@ A data set called \data{baby\_\hspace{0.3mm}smoke} represents a random sample of
   150 & 45 & 50 &  36 & 9.25 & female & nonsmoker \\ 
    \hline
 \end{tabular}
-\caption{Four cases from the \data{baby\_\hspace{0.3mm}smoke} data set. The value ``NA'', shown for the first two entries of the first variable, indicates that piece of data is missing.\textC{-2mm}}
+\caption{Four cases from the \data{baby\_\hspace{0.3mm}smoke} data set. The value ``NA'', shown for the first two entries of the first variable, indicates that piece of data is missing.}
 \label{babySmokeDF}
 \end{table}
 
@@ -767,7 +768,7 @@ The benefits of pooling the standard deviation are realized through obtaining a 
 
 
 %__________________
-\section[Power calculations for a difference of means (special topic)]{Power calculations for a difference of means\\ (special topic)}
+\section[Power calculations for a difference of means (special topic)]{Power calculations for a difference of means\\ (special topic) \sectionvideohref{coursera_video-power}~\sectionslideshref{gdoc_os3_slides_5-4}}
 \label{PowerForDifferenceOfTwoMeans}
 
 Often times in experiment planning, there are two competing considerations:
@@ -918,7 +919,7 @@ n &= \frac{2.8^2}{3^2} \times \left( 12^2 + 12^2 \right) = 250.88 \\
 We should target about 251 patients per group.
 \end{example}
 
-The standard error difference of $2.8 \times SE$ is specific to a context where the targeted power is 80\% and the significance level is $\alpha = 0.05$. If the targeted power is 90\% or if we use a difference significance level, then we'll use something a little different than $2.8 \times SE$.
+The standard error difference of $2.8 \times SE$ is specific to a context where the targeted power is 80\% and the significance level is $\alpha = 0.05$. If the targeted power is 90\% or if we use a different significance level, then we'll use something a little different than $2.8 \times SE$.
 
 \begin{exercise}
 Suppose the targeted power was 90\% and we were using $\alpha = 0.01$. How many standard errors should separate the centers of the null and alternative distribution, where the alternative distribution is centered at the minimum effect size of interest? Assume the test is two-sided.\footnote{First, find the Z-score such that 90\% of the distribution is below it: $Z = 1.28$. Next, find the cutoffs for the rejection regions: $\pm 2.58$. Then the difference in centers should be about $1.28 \times SE + 2.58 \times SE = 3.86 \times SE$.}
@@ -952,7 +953,7 @@ Power calculations for expensive or risky experiments are critical. However, wha
 
 
 %__________________
-\section[Comparing many means with ANOVA (special topic)]{Comparing many means with ANOVA\\(special topic)}
+\section[Comparing many means with ANOVA (special topic)]{Comparing many means with ANOVA\\(special topic) \sectionvideohref{coursera_video-anova_intro} \sectionvideohref{coursera_video-anova_conditions} \sectionvideohref{coursera_video-mult_comparison}~\sectionslideshref{gdoc_os3_slides_5-5}}
 \label{anovaAndRegrWithCategoricalVariables}
 
 \index{analysis of variance (ANOVA)|(}

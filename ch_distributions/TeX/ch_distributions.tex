@@ -4,7 +4,7 @@
 \index{distribution!normal|(}
 
 %_________________
-\section{Normal distribution}
+\section[Normal distribution]{Normal distribution \sectionvideohref{youtube-S_p5D-YXLS4&list=PLkIselvEzpM6V9h55s0l9Kzivih9BUWeW}~\sectionslideshref{gdoc_os3_slides_3-1}}
 \label{normalDist}
 
 Among all the distributions we see in practice, one is overwhelmingly the most common. The symmetric, unimodal, bell curve is ubiquitous throughout statistics. Indeed it is so common, that people often know it as the \term{normal curve} or \termsub{normal distribution}{distribution!normal},\footnote{It is also introduced as the Gaussian distribution after Frederic Gauss, the first person to formalize its mathematical expression.} shown in Figure~\ref{simpleNormal}. Variables such as SAT scores and heights of US adult males closely follow the normal distribution.
@@ -336,10 +336,10 @@ SAT scores closely follow the normal model with mean $\mu = 1500$ and standard d
 \end{exercise}
 
 %_________________
-\section{Evaluating the normal approximation}
+\section[Evaluating the normal approximation]{Evaluating the normal approximation \sectionvideohref{youtube-smJBsZ4YQZw&list=PLkIselvEzpM6V9h55s0l9Kzivih9BUWeW}~\sectionslideshref{gdoc_os3_slides_3-2}}
 \label{assessingNormal}
 
-Many processes can be well approximated by the normal distribution. We have already seen two good examples: SAT scores and the heights of US adult males. While using a normal model can be extremely convenient and helpful, it is important to remember normality is always an approximation. Testing the appropriateness of the normal assumption is a key step in many data analyses.
+Many processes can be well approximated by the normal distribution. We have already seen two good examples: SAT scores and the heights of US adult males. While using a normal model can be extremely convenient and helpful, it is important to remember normality is always an approximation. Evaluating the appropriateness of the normal assumption is a key step in many data analyses.
 
 \index{normal probability plot|(}
 
@@ -428,7 +428,7 @@ Figure~\ref{normalQuantileExerAdditional} shows normal probability plots for two
 
 
 %_________________
-\section{Geometric distribution (special topic)}
+\section[Geometric distribution (special topic)]{Geometric distribution (special topic)~\sectionslideshref{gdoc_os3_slides_3-3}}
 \label{geomDist}
 
 How long should we expect to flip a coin until it turns up \resp{heads}? Or how many times should we expect to roll a die until we get a \resp{1}? These questions can be answered using the geometric distribution. We first formalize each trial -- such as a single coin flip or die toss -- using the Bernoulli distribution, and then we combine these with our tools from probability (Chapter~\ref{probability}) to construct the geometric distribution.
@@ -566,7 +566,7 @@ The independence assumption is crucial to the geometric distribution's accurate 
 
 
 
-\section{Binomial distribution (special topic)}
+\section[Binomial distribution (special topic)]{Binomial distribution (special topic) \sectionvideohref{youtube-tKmyzhvgudw&list=PLkIselvEzpM6V9h55s0l9Kzivih9BUWeW} \sectionvideohref{youtube-VvksxAZAlrQ&list=PLkIselvEzpM6V9h55s0l9Kzivih9BUWeW}~\sectionslideshref{gdoc_os3_slides_3-4}}
 \label{binomialModel}
 
 \index{distribution!binomial|(}
@@ -958,7 +958,7 @@ A histogram of the number of occurrences of AMI on 365 days for NYC is shown in 
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.7\textwidth]{ch_distributions/figures/amiIncidencesOver100Days/amiIncidencesOver100Days}
+\includegraphics[width=0.6\textwidth]{ch_distributions/figures/amiIncidencesOver100Days/amiIncidencesOver100Days}
 \caption{A histogram of the number of occurrences of AMI on 365 separate days in NYC.}
 \label{amiIncidencesOver100Days}
 \end{figure}
@@ -970,7 +970,7 @@ The \termsub{Poisson distribution}{distribution!Poisson} is often useful for est
 \item getting married, and
 \item getting struck by lightning.
 \end{itemize}
-The Poisson distribution helps us describe the number of such events that will occur in a short unit of time for a fixed population if the individuals within the population are independent.
+The Poisson distribution helps us describe the number of such events that will occur in a day for a fixed population if the individuals within the population are independent. The Poisson distribution could also be used over another unit of time, such as an hour or a~week.
 
 The histogram in Figure~\ref{amiIncidencesOver100Days} approximates a Poisson distribution with rate equal to 4.4. The \term{rate} for a Poisson distribution is the average number of occurrences in a mostly-fixed population per unit of time. In Example~\ref{amiIncidencesEachDayOver1YearInNYCExample}, the time unit is a day, the population is all New York City residents, and the historical rate is 4.4. The parameter in the Poisson distribution is the rate -- or how many events we expect to observe -- and it is typically denoted by $\lambda$\marginpar[\raggedright\vspace{-5mm}
 

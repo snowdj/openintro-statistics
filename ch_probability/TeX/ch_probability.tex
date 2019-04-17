@@ -3,9 +3,9 @@
 
 \index{probability|(}
 
-Probability forms a foundation for statistics. You might already be familiar with many aspects of probability, however, formalization of the concepts is new for most. This chapter aims to introduce probability on familiar terms using processes most people have seen before.
+Probability forms a foundation for statistics, and you might already be familiar with many aspects of probability. However, formalization of the concepts is new for most. This chapter aims to introduce probability on familiar terms using processes most people have seen before.
 
-\section{Defining probability (special topic)}
+\section[Defining probability (special topic)]{Defining probability (special topic) \sectionvideohref{youtube-rG-SLQ2uF8U&list=PLkIselvEzpM5EgoOajhw83Ax_FktnlD6n}~\sectionslideshref{gdoc_os3_slides_2-1}}
 \label{basicsOfProbability}
 
 \begin{example}{A ``die'', the singular of dice, is a cube with six faces numbered \resp{1}, \resp{2}, \resp{3}, \resp{4}, \resp{5}, and \resp{6}. What is the chance of getting \resp{1} when rolling a die?}\label{probOf1}
@@ -26,8 +26,8 @@ Since the chance of rolling a \resp{2} is $1/6$ or $16.\bar{6}\%$, the chance of
 Alternatively, we could have noticed that not rolling a \resp{2} is the same as getting a \resp{1}, \resp{3}, \resp{4}, \resp{5}, or \resp{6}, which makes up five of the six equally likely outcomes and has probability $5/6$.
 \end{example}
 
-\begin{example}{Consider rolling two dice. If $1/6^{th}$ of the time the first die is a \resp{1} and $1/6^{th}$ of those times the second die is a \resp{1}, what is the chance of getting two \resp{1}s?}\label{probOf2Ones}
-If $16.\bar{6}$\% of the time the first die is a \resp{1} and $1/6^{th}$ of \emph{those} times the second die is also a \resp{1}, then the chance that both dice are \resp{1} is $(1/6)\times (1/6)$ or $1/36$.
+\begin{example}{Consider rolling two dice. If $1/6$ of the time the first die is a \resp{1} and $1/6$ of those times the second die is a \resp{1}, what is the chance of getting two \resp{1}s?}\label{probOf2Ones}
+If $16.\bar{6}$\% of the time the first die is a \resp{1} and $1/6$ of \emph{those} times the second die is also a \resp{1}, then the chance that both dice are \resp{1} is $(1/6)\times (1/6)$ or $1/36$.
 \end{example}
 
 \subsection{Probability}
@@ -326,7 +326,7 @@ $A^c$\\\footnotesize Complement\\of outcome $A$}\index{Ac@$A^c$} of $D$ represen
 \begin{figure}[hht]
 \centering
 \includegraphics[width=0.55\textwidth]{ch_probability/figures/complementOfD/complementOfD}
-\caption{Event $D=\{$\resp{2}, \resp{3}$\}$ and its complement, $D^c = \{$\resp{1}, \resp{4}, \resp{5}, \resp{6}$\}$. $S$~represents the sample space, which is the set of all possible events.}
+\caption{Event $D=\{$\resp{2}, \resp{3}$\}$ and its complement, $D^c = \{$\resp{1}, \resp{4}, \resp{5}, \resp{6}$\}$. $S$~represents the sample space, which is the set of all possible outcomes.}
 \label{complementOfD}
 \end{figure}
 
@@ -376,17 +376,17 @@ Let $A$ represent the event where we roll two dice and their total is less than 
 
 Just as variables and observations can be independent, random processes can be independent, too. Two processes are \term{independent} if knowing the outcome of one provides no useful information about the outcome of the other. For instance, flipping a coin and rolling a die are two independent processes -- knowing the coin was heads does not help determine the outcome of a die roll. On the other hand, stock prices usually move up or down together, so they are not independent.
 
-Example~\ref{probOf2Ones} provides a basic example of two independent processes: rolling two dice. We want to determine the probability that both will be \resp{1}. Suppose one of the dice is red and the other white. If the outcome of the red die is a \resp{1}, it provides no information about the outcome of the white die. We first encountered this same question in Example~\ref{probOf2Ones} (page~\pageref{probOf2Ones}), where we calculated the probability using the following reasoning: $1/6^{th}$ of the time the red die is a \resp{1}, and $1/6^{th}$ of \emph{those} times the white die will also be \resp{1}. This is illustrated in Figure~\ref{indepForRollingTwo1s}. Because the rolls are independent, the probabilities of the corresponding outcomes can be multiplied to get the final answer: $(1/6)\times(1/6)=1/36$. This can be generalized to many independent processes. 
+Example~\ref{probOf2Ones} provides a basic example of two independent processes: rolling two dice. We want to determine the probability that both will be \resp{1}. Suppose one of the dice is red and the other white. If the outcome of the red die is a \resp{1}, it provides no information about the outcome of the white die. We first encountered this same question in Example~\ref{probOf2Ones} (page~\pageref{probOf2Ones}), where we calculated the probability using the following reasoning: $1/6$ of the time the red die is a \resp{1}, and $1/6$ of \emph{those} times the white die will also be \resp{1}. This is illustrated in Figure~\ref{indepForRollingTwo1s}. Because the rolls are independent, the probabilities of the corresponding outcomes can be multiplied to get the final answer: $(1/6)\times(1/6)=1/36$. This can be generalized to many independent processes. 
 
 \begin{figure}[hht]
 \centering
 \includegraphics[width=0.6\textwidth]{ch_probability/figures/indepForRollingTwo1s/indepForRollingTwo1s}
-\caption{$1/6^{th}$ of the time, the first roll is a \resp{1}. Then $1/6^{th}$ of \emph{those} times, the second roll will also be a \resp{1}.}
+\caption{$1/6$ of the time, the first roll is a \resp{1}. Then $1/6$ of \emph{those} times, the second roll will also be a \resp{1}.}
 \label{indepForRollingTwo1s}
 \end{figure}
 
 \begin{example}{What if there was also a blue die independent of the other two? What is the probability of rolling the three dice and getting all \resp{1}s?}\label{threeDice}
-The same logic applies from Example~\ref{probOf2Ones}. If $1/36^{th}$ of the time the white and red dice are both \resp{1}, then $1/6^{th}$ of \emph{those} times the blue die will also be \resp{1}, so multiply:
+The same logic applies from Example~\ref{probOf2Ones}. If $1/36$ of the time the white and red dice are both \resp{1}, then $1/6$ of \emph{those} times the blue die will also be \resp{1}, so multiply:
 {\begin{align*}
 P(white=\text{\small\resp{1} and } red=\text{\small\resp{1} and } blue=\text{\small\resp{1}})
 	&= P(white=\text{\small\resp{1}})\times P(red=\text{\small\resp{1}})\times P(blue=\text{\small\resp{1}}) \\
@@ -471,7 +471,7 @@ Because the equation holds, the event that the card is a heart and the event tha
 \end{example}
 
 %_________________
-\section{Conditional probability (special topic)}
+\section[Conditional probability (special topic)]{Conditional probability (special topic) \sectionvideohref{youtube-HxEz4ZHUY5Y&list=PLkIselvEzpM5EgoOajhw83Ax_FktnlD6n}~\sectionslideshref{gdoc_os3_slides_2-2}}
 \label{conditionalProbabilitySection}
 
 \index{data!family\_college|(}
@@ -724,7 +724,7 @@ Write out, in formal notation, the probability a randomly selected person who wa
 \end{exercise}
 
 \begin{exercise}
-Determine the probability that an inoculated person died from smallpox. How does this result compare with the result of Guided Practice~\ref{probDiedIfNotInoculated}?\footnote{$P($\var{result} = \resp{died} $|$ \var{inoculated} = \resp{yes}$) = \frac{P(\text{\var{result} = \resp{died} and \var{inoculated} = \resp{yes}})}{P(\text{\var{inoculated} = \resp{yes}})} = \frac{0.0010}{0.0392} = 0.0255$. The death rate for individuals who were inoculated is only about 1~in~40 while the death rate is about 1~in~7 for those who were not inoculated.}
+Determine the probability that an inoculated person died from smallpox. How does this result compare with the result of Guided Practice~\ref{probDiedIfNotInoculated}?\footnote{$P($\var{result} = \resp{died} $|$ \var{inoculated} = \resp{yes}$) = \frac{P(\text{\var{result} = \resp{died} and \var{inoculated} = \resp{yes}})}{P(\text{\var{inoculated} = \resp{yes}})} = \frac{0.0010}{0.0392} = 0.0255$ (if we avoided rounding errors, we'd get $6 / 244 = 0.0246$). The death rate for individuals who were inoculated is only about 1~in~40 while the death rate is about 1~in~7 for those who were not inoculated.}
 \end{exercise}
 
 \begin{exercise}\label{SmallpoxInoculationObsExpExercise}
@@ -766,7 +766,7 @@ Use $P($\var{inoculated} = \resp{yes}$) = 0.0392$ and $P($\var{result} = \resp{l
 \end{exercise}
 
 \begin{exercise}
-If 97.54\% of the people who were inoculated lived, what proportion of inoculated people must have died?\footnote{There were only two possible outcomes: \resp{lived} or \resp{died}. This means that 100\% - 97.45\% = 2.55\% of the people who were inoculated died.}
+If 97.54\% of the people who were inoculated lived, what proportion of inoculated people must have died?\footnote{There were only two possible outcomes: \resp{lived} or \resp{died}. This means that 100\% - 97.54\% = 2.46\% of the people who were inoculated died.}
 \end{exercise}
 
 \begin{termBox}{\tBoxTitle{Sum of conditional probabilities}
@@ -1034,7 +1034,7 @@ The last several exercises offered a way to update our belief about whether ther
 
 
 %_________________
-\section{Sampling from a small population (special topic)}
+\section[Sampling from a small population (special topic)]{Sampling from a small population (special topic)~\sectionslideshref{gdoc_os3_slides_2-3}}
 \label{smallPop}
 
 \begin{example}{Professors sometimes select a student at random to answer a question. If each student has an equal chance of being selected and there are 15 people in your class, what is the chance that she will pick you for the next question?}
@@ -1094,7 +1094,7 @@ Had we repeated Guided Practice~\ref{raffleOf30TicketsWWOReplacement} with 300 t
 
 
 %_________________
-\section{Random variables (special topic)}
+\section[Random variables (special topic)]{Random variables (special topic)~\sectionslideshref{gdoc_os3_slides_2-4}}
 \label{randomVariablesSection}
 
 \index{random variable|(}
@@ -1428,7 +1428,7 @@ Consider again Guided Practice~\ref{elenaIsSellingATVAndBuyingAToasterOvenAtAnAu
 \index{random variable|)}
 
 %_________________
-\section{Continuous distributions (special topic)}
+\section[Continuous distributions (special topic)]{Continuous distributions (special topic)~\sectionslideshref{gdoc_os3_slides_2-5}}
 \label{contDist}
 
 \index{data!FCID|(}
